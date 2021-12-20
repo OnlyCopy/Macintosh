@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Desktop</title>
+</head>
+
+<body>
+    <div class="desktop-content">
+        <nav class="macbook-navbar">
+            <div class="top-nav-elements flex justify-between">
+                <div class="left flex align-center">
+                    <div>
+                        <img class="apple-logo" src="images/apple-logo.png" alt="">
+                    </div>
+                    <div class="nav-links">
+                        <ul class='flex align-center'>
+                            <li>
+                                <h1>Finder</h1>
+                            </li>
+                            <li>
+                                <span>File</span>
+                            </li>
+                            <li>
+                                <span>Edit</span>
+                            </li>
+                            <li>
+                                <span>View</span>
+                            </li>
+                            <li>
+                                <span>Go</span>
+                            </li>
+                            <li>
+                                <span>Window</span>
+                            </li>
+                            <li>
+                                <span>Help</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class='flex align-center'>
+                        <li>
+                            <i class='bx bxs-battery-charging'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-wifi-2'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-search'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-toggle-right'></i>
+                        </li>
+                        <li>
+                            <div class="mac-os">
+                                <img id='MacOsBtn' onclick='toggleTagOS()' class='os-version'
+                                    src="/images/os-version.png" alt="">
+                                <div id='MacOs' class="os-card hidden">
+                                    <div class="tab-nav">
+                                        <div class="top-tab justify-between flex">
+                                            <div class="left flex align-center">
+                                                <ul class="window-controls flex">
+                                                    <li>
+                                                        <div class="tab-red"></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-yellow"></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-green"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex os-body">
+                                        <div class="os-icon">
+                                            <img src="/images/os-version.png" alt="">
+                                        </div>
+                                        <div class="os-information">
+                                            <h1>MacOS Mojave</h1>
+                                            <p><strong>Version:</strong> 10.14</p>
+                                            <br>
+                                            <p>iMac Pro (2017)</p>
+                                            <p><strong>Processer:</strong> 3.1 GHz Intel Core i9 7940X</p>
+                                            <br>
+                                            <div class="flex ml-5">
+                                                <button class="sbtn">More...</button>
+                                                <button class="sbtn ml-5">System Settings</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="date flex align-center">
+                            <span>Fri</span>
+                            <span>Febuary 26</span>
+                            <span>2022</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Safari -->
+
+        <div id="safari" class='hidden'>
+            <div class="tab-wrapper">
+                <nav class="window-tab">
+                    <div class="tab-nav">
+                        <div class="top-tab justify-between flex">
+                            <div class="left flex align-center">
+                                <ul class="window-controls flex">
+                                    <li>
+                                        <div class="tab-red"></div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-yellow"></div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-green"></div>
+                                    </li>
+                                </ul>
+                                <div class="browser-history flex align-center">
+                                    <button class="sbtn">
+                                        <i class='bx bxs-chevron-left'></i>
+                                    </button>
+                                    <button class="sbtn">
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <input class="search-bar sbtn" type="text" placeholder="youtube.com">
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <button class="sbtn">
+                                        <i class='bx bx-download'></i>
+                                    </button>
+                                    <button class="sbtn">
+                                        <i class='bx bx-collection'></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="youtube-channel">
+                    <nav>
+                        <div class="youtube-nav flex justify-between align-center">
+                            <div class="yleft flex align-center">
+                                <i class='bx bx-menu'></i>
+                                <img src="/images/YouTube-Logo.png" alt="">
+                            </div>
+                            <div class="ymiddle">
+                                <input class='sbtn' type="text" placeholder="Search...">
+                            </div>
+                            <div class="yright">
+                                <ul class='flex align-center'>
+                                    <li>
+                                        <i class='bx bxs-video-plus'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-grid'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-bell'></i>
+                                    </li>
+                                    <li>
+                                        <img class='yt-uicon' src="/images/original (1).jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <header>
+                        <div class="yt-channel-header"></div>
+                        <div class="yt-channel-info">
+                            <div class="w-container">
+                                <div class="stuff flex align-center">
+                                    <div class="user-icon">
+                                        <img class='yt-uicon-2' src="/images/original (1).jpg" alt="">
+                                    </div>
+                                    <div class="user-text">
+                                        <h3>Caip Year</h3>
+                                        <span>1M subscribers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="yt-videos">
+                        <div class="w-container b-half">
+                            <div class="preset-video flex align-center">
+                                <iframe width="400" height="240" src="https://www.youtube.com/embed/0e3GPea1Tyg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <h3 class="m-aar">Uploads</h3>
+                            <div class="videos">
+                                <ul class="vid-row flex">
+                                    <li>
+                                        <div class="video-c flex-col">
+                                            <div class="video-image">
+                                                <img src="/images/maxresdefault.jpg" alt="">
+                                            </div>
+                                            <div class="video-info">
+                                                <h4>Video Title</h4>
+                                                <span>100M views</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="video-c flex-col">
+                                            <div class="video-image">
+                                                <img src="/images/maxresdefault.jpg" alt="">
+                                            </div>
+                                            <div class="video-info">
+                                                <h4>Video Title</h4>
+                                                <span>100M views</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="video-c flex-col">
+                                            <div class="video-image">
+                                                <img src="/images/maxresdefault.jpg" alt="">
+                                            </div>
+                                            <div class="video-info">
+                                                <h4>Video Title</h4>
+                                                <span>100M views</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="video-c flex-col">
+                                            <div class="video-image">
+                                                <img src="/images/maxresdefault.jpg" alt="">
+                                            </div>
+                                            <div class="video-info">
+                                                <h4>Video Title</h4>
+                                                <span>100M views</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="video-c flex-col">
+                                            <div class="video-image">
+                                                <img src="/images/maxresdefault.jpg" alt="">
+                                            </div>
+                                            <div class="video-info">
+                                                <h4>Video Title</h4>
+                                                <span>100M views</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apple Music -->
+
+        <div id="AppleMusic" class="hidden">
+            <div class="tab-wrapper">
+                <div class="tab-nav">
+                    <div class="top-tab justify-between flex">
+                        <div class="left flex align-center">
+                            <ul class="window-controls flex">
+                                <li>
+                                    <div class="tab-red"></div>
+                                </li>
+                                <li>
+                                    <div class="tab-yellow"></div>
+                                </li>
+                                <li>
+                                    <div class="tab-green"></div>
+                                </li>
+                            </ul>
+                            <div class="browser-history flex align-center">
+
+                            </div>
+                        </div>
+                        <div class="middle">
+
+                        </div>
+                        <div class="right">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main>
+                    <div class="flex">
+                        <nav>
+                            <div class="tab-elements">
+                                <ul class='flex-col px-5'>
+                                    <li>
+                                        <input class="sbtn" type="text" placeholder="Search Music">
+                                    </li>
+                                    <li>
+                                        <span>Apple Music</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-heart'></i>
+                                            <span class='pl-3'>For You</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-music'></i>
+                                            <span class='pl-3'>Browse</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bx-podcast'></i>
+                                            <span class='pl-3'>Radio</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class='flex-col px-5'>
+                                    <li>
+                                        <span>Library</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-time'></i>
+                                            <span class='pl-3'>Recently Added</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-microphone-alt'></i>
+                                            <span class='pl-3'>Artist</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-album'></i>
+                                            <span class='pl-3'>Albums</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-music'></i>
+                                            <span class='pl-3'>Songs</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class='flex-col px-5'>
+                                    <li>
+                                        <span>Playlists</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex align-center">
+                                            <i class='bx bxs-grid-alt'></i>
+                                            <span class='pl-3'>GOAT</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="main-event">
+                            <div class="c-container">
+                                <header>
+                                    <div class="for-you-section">
+                                        <div class="top-section flex align-center justify-between">
+                                            <h1>For You</h1>
+                                        </div>
+                                        <div class="grid grid-col-2">
+                                            <div class="grid-item">
+                                                <div class="grid grid-col-2">
+                                                    <div><img class="grid-image" src="/images/ghfhSGD.jpg" alt=""></div>
+                                                    <div><img class="grid-image" src="/images/R.jpg" alt=""></div>
+                                                    <div><img class="grid-image"
+                                                            src="/images/Lil-Tjay-Ft.-Fivio-Foreign-Kay-Flock-–-Not-In-The-Mood.jpg"
+                                                            alt=""></div>
+                                                    <div><img class="grid-image"
+                                                            src="/images/Lil-Nas-X-Industry-Baby-1200x1200.jpg" alt="">
+                                                    </div>
+                                                    <div><img class="grid-image" src="/images/R (1).jpg" alt=""></div>
+                                                    <div><img class="grid-image" src="/images/wyclef_cover1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-item">
+                                                <div class="grid grid-col-2 reverse">
+                                                    <div><img class="grid-image" src="/images/ghfhSGD.jpg" alt=""></div>
+                                                    <div><img class="grid-image" src="/images/R.jpg" alt=""></div>
+                                                    <div><img class="grid-image"
+                                                            src="/images/Lil-Tjay-Ft.-Fivio-Foreign-Kay-Flock-–-Not-In-The-Mood.jpg"
+                                                            alt=""></div>
+                                                    <div><img class="grid-image"
+                                                            src="/images/Lil-Nas-X-Industry-Baby-1200x1200.jpg" alt="">
+                                                    </div>
+                                                    <div><img class="grid-image" src="/images/R (1).jpg" alt=""></div>
+                                                    <div><img class="grid-image" src="/images/wyclef_cover1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="update-date flex justify-between">
+                                            <span>Updated Yesterday</span>
+                                            <span>Updated Yesterday</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <section class="play-date">
+                                    <div class="top-section-2 px-5 flex justify-between">
+                                        <h1>Recently Played</h1>
+                                        <span>See all</span>
+                                    </div>
+                                    <div class="px-5">
+                                        <ul class="rp-list flex">
+                                            <li>
+                                                <img class='rp-img' src="/images/Lil-Nas-X-Industry-Baby-1200x1200.jpg"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class='rp-img'
+                                                    src="/images/Lil-Tjay-Ft.-Fivio-Foreign-Kay-Flock-–-Not-In-The-Mood.jpg"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class='rp-img' src="/images/image2.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <img class='rp-img' src="/images/King-Von-–-I-Am-What-I-Am-feat.-Fivio-Foreign.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <nav class='bottom-nav'>
+                <div class="bottom-nav-contents">
+                    <ul class='icons flex'>
+                        <li>
+                            <img src="/images/nav-icons/685b8bc5925da35df8bf06dd49b471a0.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/App_Store_(iOS)-Logo.wine.png" alt="">
+                        </li>
+                        <li>
+                            <img id="musicLogo" onclick="toggleTagMusic()" src="/images/nav-icons/apple_music_logo.png"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/ios-photos-app-icon_2x.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/macos-high-sierra-launchpad-icon.png" alt="">
+                        </li>
+                        <li>
+                            <img id="safariLogo" onclick="toggleTagSafari()" src="/images/nav-icons/R (1).png" alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/R (2).png" alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/R (3).png" alt="">
+                        </li>
+                        <li>
+                            <img src="/images/nav-icons/R.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

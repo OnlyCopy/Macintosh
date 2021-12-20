@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-container {
+  display: grid;
+  max-width: 720px;
+  justify-content: center;
+}
+
+.grid-image {
+  max-width: 150px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.sbtn {
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+  background-color: #494949;
+  color: #fff;
+  padding: 2px;
+}
+
+.px-5 {
+  padding: 0px 30px;
+}
+
+.pl-3 {
+  padding-left: 5px;
+}
+
+.ml-5 {
+  margin-left: 10px;
+}
+
+.reverse :nth-child(2) {
+  order: 2;
+}
+
+/* Desktop Styles */
+.desktop-content {
+  position: absolute;
+  z-index: 1000;
+  background: url(/images/macos-mojave-night-mode-stock-0y.jpg) center;
+  width: 100vw;
+  height: 100vh;
+}
+/* Top navbar */
+
+.top-nav-elements {
+  padding: 3px 10px;
+  width: 100vw;
+}
+
+.right li {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+/* Box-icons styles */
+.bx-wifi-2 {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.bxs-battery-charging {
+  font-size: 20px;
+}
+
+.bx-search {
+  font-size: 18px;
+}
+/* End */
+
+.nav-links {
+  margin-left: 10px;
+}
+
+.nav-links ul li {
+  padding: 0px 10px;
+}
+
+.nav-links h1,
+.nav-links span {
+  font-size: 18px;
+}
+
+.nav-links h1 {
+  font-weight: 700;
+}
+
+.macbook-navbar {
+  width: 100vw;
+  background-color: #0000003a;
+}
+
+.apple-logo {
+  width: 20px;
+  height: 20px;
+  filter: invert();
+}
+
+.os-version {
+  width: 24px;
+  position: relative;
+}
+
+.os-card {
+  position: absolute;
+  margin-top: 5px;
+  width: 600px;
+  height: 300px;
+  right: 225px;
+  background-color: rgba(34, 34, 34, 0.781);
+  border-radius: 5px;
+}
+
+.os-icon img {
+  width: 150px;
+}
+
+.os-icon {
+  margin: 0px 20px;
+}
+
+.os-body {
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.os-information {
+  padding: 15px;
+  text-align: start;
+}
+
+.os-card .tab-nav {
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.226);
+  border-bottom: none;
+}
+
+.date span {
+  margin: 0px 5px;
+}
+/* End */
+
+/* Bottom Nav */
+
+.bottom-nav {
+  position: absolute;
+  margin-left: 250px;
+  bottom: 0;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.363);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.icons {
+  display: flex;
+  margin-left: 750px;
+}
+.icons li {
+  padding: 0px 10px;
+}
+
+.bottom-nav-contents {
+  padding: 5px;
+}
+
+.bottom-nav-contents ul img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.bottom-nav-contents ul img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.5);
+  margin: 0px 20px;
+  margin-bottom: 5px;
+}
+
+/* End */
+
+/* Open Window */
+.tab-wrapper {
+  position: absolute;
+  display: grid;
+  margin-left: 500px;
+  top: 20%;
+  background-color: rgb(46, 46, 46);
+  width: 1440px;
+  height: 800px;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.tab-nav {
+  position: relative;
+  background-color: #2e2e2e;
+  width: 1440px;
+  height: 50px;
+  border-bottom: 1px solid #000;
+}
+
+.top-tab {
+  position: absolute;
+  width: 1400px;
+  top: 30%;
+  margin: 0px 10px;
+}
+
+.window-controls li {
+  padding: 0px 5px;
+}
+
+.tab-red {
+  background-color: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.tab-yellow {
+  background-color: rgb(223, 219, 5);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.tab-green {
+  background-color: rgb(7, 207, 7);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.browser-history,
+.browser-history > button {
+  margin: 0px 3px;
+}
+
+.search-bar {
+  width: 400px;
+}
+
+.search-bar::placeholder {
+  text-align: center;
+}
+
+/* YT section */
+.youtube-channel {
+  margin-top: 10px;
+  position: absolute;
+  top: 5%;
+}
+
+.youtube-nav {
+  width: 1440px;
+  padding: 0px 10px;
+  background-color: rgb(32, 32, 32);
+}
+
+.yright li {
+  padding: 0px 5px;
+}
+
+.yleft {
+  filter: invert(1);
+}
+
+.yleft img {
+  width: 80px;
+  height: 40px;
+  margin-left: 3px;
+}
+
+.yt-uicon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.yt-uicon-2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.yt-channel-header {
+  background: url(/images/wp2601899.jpg) center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.yt-channel-info {
+  width: 100%;
+  background-color: #181818;
+  height: 100px;
+}
+
+.stuff {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.user-text {
+  margin-left: 10px;
+}
+
+.video-image img {
+  margin-bottom: 5px;
+  width: 200px;
+  height: 120px;
+}
+
+.video-info span {
+  color: #ffffff;
+}
+
+.yt-videos {
+  width: 1440px;
+}
+
+.vid-row {
+  padding: 5px 0px;
+}
+
+.vid-row li {
+  padding: 0px 10px;
+}
+
+.m-aar {
+  color: #fff;
+  margin: 15px 0px;
+}
+
+.b-half {
+  margin-top: 10px;
+  margin-left: 400px;
+}
+/* End */
+
+/* Apple Music */
+#AppleMusic .tab-nav {
+  background-color: rgba(17, 17, 17, 0.473);
+}
+
+#AppleMusic .sbtn {
+  background-color: rgba(43, 43, 43, 0.24);
+}
+
+#AppleMusic .tab-wrapper {
+  background-color: rgba(17, 17, 17, 0.473);
+}
+
+#AppleMusic .tab-elements {
+  position: absolute;
+  top: 6.4%;
+  width: 15%;
+  height: 900px;
+  background-color: #2e2e2e;
+}
+
+#AppleMusic ul {
+  margin: 15px 0px;
+}
+
+#AppleMusic li {
+  padding: 5px 0px;
+  color: #a7a7a7;
+}
+
+#AppleMusic .main-event {
+  width: 20%;
+  height: 800px;
+}
+
+#AppleMusic .c-container {
+  position: absolute;
+  max-width: 100%;
+  margin-left: 214px;
+}
+
+.for-you-section {
+  width: 100%;
+  background-color: #202020;
+  padding: 30px;
+}
+
+.top-section {
+  color: #fff;
+  margin: 15px 0px;
+}
+
+#AppleMusic .tab-nav {
+  overflow: hidden;
+}
+
+#AppleMusic .window-controls li {
+  padding: 0px 5px;
+}
+
+#AppleMusic .sbtn {
+  width: 180px;
+  background-color: #353535;
+}
+
+.grid-item {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 68, 68);
+}
+
+.update-date {
+  margin-top: 10px;
+  width: 610px;
+  color: #777777;
+}
+
+.top-section-2 {
+  margin: 15px 0px;
+  color: #fff;
+}
+
+.top-section-2 span {
+  color: rgb(0, 153, 255);
+}
+
+.play-date {
+  width: 100%;
+  background-color: #181818;
+  height: 500px;
+  padding: 15px;
+}
+
+.rp-img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 15px;
+}
+
+.rp-list li {
+  flex: 1;
+}
+
+/* End */
+
+/* Animations */
+
+.hidden {
+  display: none;
+}
